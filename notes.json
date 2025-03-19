@@ -1,0 +1,9 @@
+[
+    { "key": "a", "sound": "sounds/A.mp3" },
+    { "key": "b", "sound": "sounds/B.mp3" },
+    { "key": "c", "sound": "sounds/C.mp3" },
+    { "key": "d", "sound": "sounds/D.mp3" },
+    { "key": "e", "sound": "sounds/E.mp3" },
+    { "key": "f", "sound": "sounds/F.mp3" },
+    { "key": "g", "sound": "sounds/G.mp3" }
+]

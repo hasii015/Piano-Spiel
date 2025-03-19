@@ -1,0 +1,95 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #b99ac6;
+}
+.wrapper {
+  padding: 35px 40px;
+  border-radius: 20px;
+  background: #141414;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+    color: white;
+}
+.piano-keys {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+}
+.piano-keys .key {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-transform: uppercase;
+}
+.piano-keys .black {
+  z-index: 2;
+  width: 44px;
+  height: 140px;
+  margin: 0 -22px 0 -22px;
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(#333, #000);
+}
+
+.piano-keys .white {
+  height: 230px;
+  width: 70px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: linear-gradient(#fff 96%, #eee 4%);
+}
+.piano-keys .white.active {
+  box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+  background:linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+.piano-keys .key span {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: #A2A2A2;
+  font-size: 1.13rem;
+  text-align: center;
+}
+
+.piano-keys .black span {
+  bottom: 13px;
+  color: #888888;
+}
+
+#resetBtn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #dcaaff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: center;
+}
+
+#resetBtn:hover {
+  background-color: #8236a2; 
+  transform: scale(1.05); 
+}
+
+#resetBtn:active {
+  background-color: #3b2d78; 
+}
+
+#resetBtn:focus {
+  outline: none;
+}
